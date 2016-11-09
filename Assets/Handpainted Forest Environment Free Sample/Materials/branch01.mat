@@ -60,7 +60,7 @@ Material:
       second: 0.51785713
     - first:
         name: _Cutoff
-      second: 0.78571403
+      second: 0.735
     - first:
         name: _InvFade
       second: 1
@@ -72,7 +72,7 @@ Material:
       second: 0
     - first:
         name: _Shininess
-      second: 0.01
+      second: 0.1
     - first:
         name: _SquashAmount
       second: 1
