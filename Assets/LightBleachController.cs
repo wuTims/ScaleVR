@@ -23,7 +23,9 @@ public class LightBleachController : MonoBehaviour {
 	}
 
 	public void RenderLight (float newLightToRender){
-		
+
+		Light prevLight = lightArray [lightToRender].GetComponent<Light> ();
+
 		if (lightToRender < (int)newLightToRender) {
 			increasingSlider = true;
 		} else if(lightToRender > (int)newLightToRender) {
@@ -37,7 +39,7 @@ public class LightBleachController : MonoBehaviour {
 		if (increasingSlider) {
 			currLight.enabled = true;
 		} else if(!increasingSlider) {
-			currLight.enabled = false;
+			prevLight.enabled = false;
 		}
 //		if (currLight.enabled) {
 //			currLight.enabled = false;
